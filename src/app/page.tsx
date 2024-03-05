@@ -22,7 +22,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex flex-col items-center justify-between p-6 gap-6">
+    <main className="flex flex-col items-center justify-between p-12 gap-12">
       <Image
         className="rounded-lg"
         alt="Logo depecting a black bald male shirless with a big smile and holding a mic"
@@ -31,8 +31,11 @@ export default function Home() {
         width={300}
       />
       <div className="flex flex-col items-center gap-6">
-        <p className="text-xl h-12">{joke}</p>
-        <Button size={'lg'} className="mt-4" onClick={() => getNewJoke()}>
+        <p className="text-xl">{joke}</p>
+        <Button
+          size={'lg'}
+          className="mt-4 bg-goldcrust hover:bg-olive"
+          onClick={() => getNewJoke()}>
           {"Darie's next joke"}
         </Button>
       </div>
