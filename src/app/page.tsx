@@ -32,8 +32,8 @@ export default function Home() {
       />
       <div className="flex flex-col items-center gap-6">
         <p className="text-xl h-12">{joke}</p>
-        <Button className="mt-4" onClick={() => getNewJoke()}>
-          Darie's next joke
+        <Button size={'lg'} className="mt-4" onClick={() => getNewJoke()}>
+          {"Darie's next joke"}
         </Button>
       </div>
     </main>
